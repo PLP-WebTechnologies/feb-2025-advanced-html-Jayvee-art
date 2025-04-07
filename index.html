@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Contact and Registration Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Important Steps:</h2>
+        <ol type="I">
+            <li>Sign up for an account.</li>
+            <li>Fill out your contact details.</li>
+            <li>Submit the registration form.</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>webpage:</h2>
+        <img src="https://images.pexels.com/photos/3468856/pexels-photo-3468856.jpeg" alt="Beautiful scenery" style="width:100%; height:auto;">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Kamau</td>
+                    <td>69 Tom Mboya St</td>
+                    <td>(+254) 790 234 567</td>
+                    <td>kamaujohn254@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Javan Solomon</td>
+                    <td>456 Maseno</td>
+                    <td>(+254) 792 179 431</td>
+                    <td>vansolomon254@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Andrew Omollo Okinda</td>
+                    <td>46 Kisumu</td>
+                    <td>(+254) 793 002 923</td>
+                    <td>andyomollo234@outlook.com</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Register Here:</h2>
+        <form action="/submit" method="POST">
+            <fieldset>
+                <legend>Registration Form</legend>
+
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+
+                <!-- Date of Birth Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <!-- Dropdown Field -->
+                <label for="country">Select Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Choose a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                </select><br><br>
+
+                <!-- Gender Radio Buttons -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" required><br><br>
+                </fieldset>
+
+                <!-- Interests Checkboxes -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="reading" name="interests" value="reading"><br><br>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Contact Registration. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
